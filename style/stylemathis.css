@@ -1,0 +1,167 @@
+/* Couleurs et configurations principales */
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #ffffff;
+  --accent-color: #f0f4f8;
+  --text-color: #333333;
+  --highlight-color: #e8f4ff;
+}
+
+/* Réinitialisation et styles de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: darken(var(--primary-color), 10%);
+}
+
+/* En-tête */
+header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Barre de navigation */
+nav {
+  background-color: var(--accent-color);
+  padding: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  padding: 0.5rem 1rem;
+  color: var(--text-color);
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.first {
+  background-color: var(--highlight-color);
+  color: var(--primary-color);
+}
+
+/* Sections */
+section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--accent-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+section p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+section q {
+  font-style: italic;
+  color: var(--primary-color);
+}
+
+/* Liste dans la section 'Au travail !' */
+section ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+section ul li {
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
+}
+
+/* Pied de page */
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
+/* Style pour l'aside de validation */
+aside#last {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--highlight-color);
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+aside#last img {
+  width: 80px;
+  margin: 0 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  footer ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

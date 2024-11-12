@@ -1,0 +1,148 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif; /* Utilise une police moderne */
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #3A3D98; /* Bleu profond */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+    color: #FFD700; /* Couleur or */
+}
+
+/* Navigation Bar */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #4E4B98; /* Bleu-violet */
+    padding: 15px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #FFD700; /* Texte doré */
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #F8C471; /* Jaune clair */
+    color: #3A3D98; /* Texte bleu profond au survol */
+    transform: scale(1.1);
+}
+
+/* Section Styling */
+section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+section h2 {
+    color: #3A3D98; /* Titre bleu profond */
+    margin-bottom: 20px;
+    font-size: 2rem;
+    border-bottom: 3px solid #FFD700; /* Soulignement doré */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Button Styling */
+button, .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #F8C471; /* Jaune vif */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover, .button:hover {
+    background-color: #D68910; /* Orange foncé au survol */
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #3A3D98;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: 50px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: #FFD700; /* Lien doré */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #F8C471; /* Jaune clair au survol */
+}
+
+/* Extra Effects for Hovering */
+nav ul li a,
+footer ul li a {
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover::after,
+footer ul li a:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #FFD700;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+}
